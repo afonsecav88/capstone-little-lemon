@@ -1,7 +1,7 @@
-import person1 from '../images/person1.svg';
-import person2 from '../images/person2.svg';
-import person3 from '../images/person3.svg';
-import person4 from '../images/person4.svg';
+import person1 from '/person1.svg';
+import person2 from '/person2.svg';
+import person3 from '/person3.svg';
+import person4 from '/person4.svg';
 
 export const testimonialsData = [
   {

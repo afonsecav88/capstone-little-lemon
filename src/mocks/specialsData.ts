@@ -1,6 +1,6 @@
-import greekSalad from '../images/greek salad.jpg';
-import bruchetta from '../images/bruchetta.jpg';
-import leamonDesseart from '../images/lemon dessert.jpg';
+import greekSalad from '/greek salad.jpg';
+import bruchetta from '/bruchetta.jpg';
+import leamonDesseart from '/lemon dessert.jpg';
 
 export const specialsData = [
   {
