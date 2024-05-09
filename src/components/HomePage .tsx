@@ -8,8 +8,8 @@ export const HomePage = () => {
     <>
       <CallToAction />
       <Specials />
-      <CustomersSay />
-      <About />
+      {/* <CustomersSay /> */}
+      {/* <About /> */}
     </>
   );
 };

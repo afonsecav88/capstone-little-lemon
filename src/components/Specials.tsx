@@ -2,7 +2,7 @@ import { specialsData } from '../mocks/specialsData';
 
 export const Specials = () => {
   return (
-    <article className="specials-section">
+    <article className="specials-section-container">
       <section className="specials-section-header">
         <h1>This weeks specials!</h1>
         <button>Online Menu</button>

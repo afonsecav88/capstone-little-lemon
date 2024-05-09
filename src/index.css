@@ -2,7 +2,7 @@
   --primary-green: #495E57;
   --primary-yellow: #F4CE14;
   --secondary-green: #92BDAF;
-  --secondary-yellow: #F4CE14;
+  --secondary-yellow: #C3A510;
 }
 
 
@@ -16,7 +16,6 @@ body {
 }
 
 /* Begin nav-section */
-
 .nav-container {
   width: 100%;
 }
@@ -29,7 +28,6 @@ body {
   gap: 1rem;
   list-style: none;
   padding: 1em;
-  position: relative;
 }
 
 .nav-logo {
@@ -67,16 +65,95 @@ body {
   display: none;
 }
 
+
 /* End nav-section */
 
-/* Begin nav-section mobile */
+/* Begin CallToAction section */
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15vw;
+  height: 19em;
+  background-color: #495E57;
+  /* padding: 3em; */
+}
+
+.call-to-action>section>img {
+  display: flex;
+  /* width: 22em;
+  height: 26em; */
+  border-radius: 1em;
+}
+
+.call-to-action>section>button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1rem;
+  padding: 0.5em;
+  background-color: var(secondary-yellow);
+  color: #333333;
+  font-size: 13.5pt;
+  border: 0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.call-to-action>section>button:hover {
+  background-color: #C3A510;
+}
+
+.call-to-action-button-link {
+  text-decoration: none;
+}
+
+
+.call-to-action>section {
+  display: flex;
+  flex-direction: column;
+  margin: 0em;
+}
+
+.call-to-action>section>p {
+  width: 14em;
+  font-size: 14pt;
+  color: #EDEFEE;
+}
+
+/* End CallToAction Component */
+
+
+/* Begin chicago component style */
+#section-chicago-h1 {
+  margin-top: 0;
+  margin-bottom: 0em;
+  color: #C3A510;
+  font-size: 30pt;
+}
+
+#section-chicago-h2 {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  color: #EDEFEE;
+  font-size: 22pt;
+  font-weight: lighter;
+}
+
+/* End chicago component style */
+
+
+
+/* Begin mobile first  */
 @media (max-width:667px) {
+
+  /*Begin nav-section*/
   .nav-menu {
     display: flex;
+    position: relative;
+    gap: 0;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-right: .5rem;
     padding: 0;
   }
 
@@ -94,21 +171,29 @@ body {
   .button-hamburger {
     display: flex;
     cursor: pointer;
+    padding-left: .5em;
+    padding-right: .5em;
   }
 
   .menu-container-responsive {
     position: absolute;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     font-weight: bold;
-    left: 0.2rem;
+    left: 0.7rem;
     padding: 1em;
     background-color: var(--secondary-green);
     min-width: 8.5rem;
+    border-radius: .5rem;
+    overflow-y: auto;
   }
 
   .nav-link-responsive {
     list-style: none;
     padding-bottom: 1em;
+  }
+
+  .nav-link-responsive:last-child {
+    padding-bottom: 0;
   }
 
   .nav-link-responsive a {
@@ -123,89 +208,126 @@ body {
     color: rgba(103, 14, 14, 0.746);
     padding: .5em;
     border-radius: 0.5rem;
-
   }
+
+  /* End nav-section */
+
+  /* Begin CallToAction section */
+  .call-to-action-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 15rem;
+    background-color: #495E57;
+    padding: 1em;
+  }
+
+  .call-to-action-img {
+    display: flex;
+    width: 80%;
+    max-width: 15rem;
+    border-radius: 1rem;
+  }
+
+
+  .call-to-action-button {
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding: 0.5em;
+    background-color: #F4CE14;
+    color: #333333;
+    font-size: 10pt;
+    border: 0em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .call-to-action-button:hover {
+    background-color: #C3A510;
+  }
+
+  .call-to-action-button-link {
+    text-decoration: none;
+  }
+
+  .call-to-action-p {
+    width: 14rem;
+    font-size: 12pt;
+    color: #EDEFEE;
+  }
+
+  /* End CallToAction Component */
+
+
+  /* Begin chicago component style */
+
+  #section-chicago-h1 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: var(--secondary-yellow);
+    font-size: 20pt;
+  }
+
+  #section-chicago-h2 {
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    color: #EDEFEE;
+    font-size: 15pt;
+    font-weight: lighter;
+  }
+
+  /* End chicago component style */
+
+  /* End CallToAction section */
+
+  /* Begin Specials Section */
+  .specials-section-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: "Karla";
+    margin-top: 1rem;
+  }
+
+  .specials-section-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+  }
+
+  .specials-section-header>h1 {
+    padding: 0;
+    font-size: 16pt;
+    min-width: min-content;
+  }
+
+  .specials-section-header>button {
+    min-width: 7rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5em;
+    background-color: var(--secondary-yellow);
+    color: #333333;
+    font-size: 11pt;
+    border: 0em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .specials-section-header>button:hover {
+    background-color: var(--secondary-green);
+  }
+
+  /* End Specials Section */
 }
 
-/* End nav-section */
 
-
-/* Begin CallToAction Component */
-/* .hero-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15vw;
-  height: 19em;
-  background-color: #495E57;
-  padding: 3em;
-}
-
-.hero-section>section>img {
-  display: flex;
-  width: 22em;
-  height: 26em;
-  border-radius: 1em;
-}
-
-.hero-section>section>button {
-  width: 12em;
-  height: 3em;
-  border-radius: 1em;
-  padding: 0.5em;
-  background-color: #F4CE14;
-  color: #333333;
-  font-size: 13.5pt;
-  border: 0em;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.hero-section>section>button:hover {
-  background-color: #C3A510;
-}
-
-.hero-section-button-link {
-  text-decoration: none;
-
-}
-
-
-.hero-section>section {
-  display: flex;
-  flex-direction: column;
-  margin: 0em;
-}
-
-.hero-section>section>p {
-  width: 14em;
-  font-size: 14pt;
-  color: #EDEFEE;
-} */
-
-/* End CallToAction Component */
-
-
-/* Begin chicago component style */
-/* #section-chicago-h1 {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  color: #C3A510;
-  font-size: 40pt;
-}
-
-#section-chicago-h2 {
-  margin-top: 0em;
-  margin-bottom: 0.5em;
-  color: #EDEFEE;
-  font-size: 22pt;
-  font-weight: lighter;
-} */
-
-/* End chicago component style */
-
-/* Begin Specials Component */
-/* .specials-section {
+/* Begin Specials Component
+.specials-section {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -240,7 +362,7 @@ body {
   font-weight: bold;
 } */
 
-
+*/
 /* Begin Card section of specials */
 /* .specials-section-container {
   display: flex;
@@ -296,7 +418,7 @@ body {
   font-weight: bold;
   padding-bottom: 1em;
   padding-left: 1em;
-} */
+}
 
 /* End Specials Component */
 
@@ -585,9 +707,9 @@ body {
 } */
 
 
-/*Begin media hero-section */
+/*Begin media call-to-action */
 /* @media (max-width: 400px) {
-  .hero-section {
+  .call-to-action {
     display: flex;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -598,7 +720,7 @@ body {
 }
 
 @media (max-width: 838px) {
-  .hero-section {
+  .call-to-action {
     display: flex;
     flex-direction: column;
     padding-top: 5em;
@@ -608,7 +730,7 @@ body {
   }
 } */
 
-/*End media hero-section */
+/*End media call-to-action */
 
 /*Begin testimonials review section */
 /* @media (max-width: 400px) {
@@ -632,7 +754,7 @@ body {
   }
 } */
 
-/* End media hero-section */
+/* End media call-to-action */
 
 
 /* Begin about section */
