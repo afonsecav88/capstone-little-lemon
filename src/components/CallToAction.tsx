@@ -11,7 +11,7 @@ export const CallToAction = () => {
           recipes served with a modern twist.
         </p>
 
-        <button className="call-to-action-button">
+        <button className="call-to-action-button" aria-label="reserve a table">
           <Link to="/booking" className="call-to-action-button-link">
             Reserve a Table{' '}
           </Link>{' '}

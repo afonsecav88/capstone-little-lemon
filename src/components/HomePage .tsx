@@ -8,7 +8,7 @@ export const HomePage = () => {
     <>
       <CallToAction />
       <Specials />
-      {/* <CustomersSay /> */}
+      <CustomersSay />
       {/* <About /> */}
     </>
   );

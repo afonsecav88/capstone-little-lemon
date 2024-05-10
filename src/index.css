@@ -3,6 +3,7 @@
   --primary-yellow: #F4CE14;
   --secondary-green: #92BDAF;
   --secondary-yellow: #C3A510;
+  --cards-colors-separator: #959595;
 }
 
 
@@ -100,7 +101,7 @@ body {
 }
 
 .call-to-action>section>button:hover {
-  background-color: #C3A510;
+  background-color: var(--secondary-yellow);
 }
 
 .call-to-action-button-link {
@@ -127,7 +128,7 @@ body {
 #section-chicago-h1 {
   margin-top: 0;
   margin-bottom: 0em;
-  color: #C3A510;
+  color: var(--secondary-yellow);
   font-size: 30pt;
 }
 
@@ -175,6 +176,11 @@ body {
     padding-right: .5em;
   }
 
+  .button-hamburger:hover {
+    background-color: var(--secondary-green);
+    border-radius: 0.5rem;
+  }
+
   .menu-container-responsive {
     position: absolute;
     margin-top: 2.5rem;
@@ -219,7 +225,7 @@ body {
     align-items: center;
     max-width: 100%;
     height: 15rem;
-    background-color: #495E57;
+    background-color: var(--primary-green);
     padding: 1em;
   }
 
@@ -236,7 +242,7 @@ body {
     height: 2.5rem;
     border-radius: 1rem;
     padding: 0.5em;
-    background-color: #F4CE14;
+    background-color: var(--primary-yellow);
     color: #333333;
     font-size: 10pt;
     border: 0em;
@@ -245,7 +251,7 @@ body {
   }
 
   .call-to-action-button:hover {
-    background-color: #C3A510;
+    background-color: var(--secondary-yellow);
   }
 
   .call-to-action-button-link {
@@ -288,7 +294,7 @@ body {
     align-content: center;
     font-family: "Karla";
     align-items: center;
-    background-color: #EDEFEE;
+    /* background-color: #EDEFEE; */
     padding: 2em 1em;
   }
 
@@ -326,12 +332,13 @@ body {
     display: flex;
     flex-direction: row;
     padding-bottom: 2em;
-    border-top: #959595 2px solid;
+    border-top: var(--cards-colors-separator) 2px solid;
     border-bottom: #959595 2px solid;
   }
 
   .specials-section-card:hover {
-    box-shadow: .5rem .5rem .5rem #959595;
+    box-shadow: .5rem .5rem .5rem var(--cards-colors-separator);
+    transition: all .3s ease-out;
   }
 
   .specials-section-card-items {
@@ -394,107 +401,56 @@ body {
   }
 
   /* End Specials Section */
+  /*Begin section CustomerSay*/
+  .section-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: var(--primary-green);
+    margin-top: 3em;
+  }
+
+  .section-testimonials>h1 {
+    font-weight: lighter;
+    color: #333333;
+    font-size: 35pt;
+  }
+
+  #rating-header {
+    font-weight: bold;
+    color: #333333;
+    font-size: 12.5pt;
+  }
+
+  .card-review-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 20em;
+  }
+
+  .card-image-testimonial {
+    display: inline-flex;
+    width: 15em;
+    height: 6em;
+    padding-top: 2em;
+    gap: 3em
+  }
+
+  .card-image>p {
+    margin-top: 0em;
+  }
+
+  /* End section-testimonials*/
+
+
 }
 
 
-/* Begin Specials Component
-.specials-section {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  margin-top: 8em;
-}
-
-.specials-section-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12vw;
-  padding: 2em;
-}
-
-.specials-section-header>h1 {
-  margin: 0em;
-  color: #333333;
-  font-size: 35pt;
-}
-
-.specials-section-header>button {
-  width: 12em;
-  height: 3em;
-  border-radius: 1em;
-  padding: 0.5em;
-  background-color: #F4CE14;
-  color: #333333;
-  font-size: 13.5pt;
-  border: 0em;
-  font-weight: bold;
-} */
-
-*/
-/* Begin Card section of specials */
-/* .specials-section-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2vw;
-  padding: 1em;
-}
-
-.specials-section-card {
-  display: flex;
-  flex-direction: column;
-  width: 17.5em;
-  align-items: center;
-  background-color: #EDEFEE;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-}
-
-.card-image {
-  width: 17.5em;
-  height: 10em;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-}
-
-.card-header {
-  display: flex;
-  padding-top: 1em;
-  width: 15.0em;
-  justify-content: space-between;
-  color: #333333;
-  font-size: 12.5pt;
-  font-weight: bold;
-}
-
-#card-header-price {
-  color: #EE946B;
-}
-
-#card-description {
-  width: 15em;
-  height: 8em;
-}
-
-.card-footer {
-  display: flex;
-  align-self: flex-start;
-  gap: 1em;
-  color: #333333;
-  font-size: 12.5pt;
-  border: 0em;
-  font-weight: bold;
-  padding-bottom: 1em;
-  padding-left: 1em;
-}
-
-/* End Specials Component */
-
-
-/* Begin section-testimonials*/
+/*Begin section CustomerSay*/
 /* .section-testimonials {
   display: flex;
   flex-direction: column;

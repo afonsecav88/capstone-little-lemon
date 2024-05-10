@@ -5,7 +5,7 @@ export const Specials = () => {
     <article className="specials-section-container">
       <section className="specials-section-header">
         <h1>This weeks specials!</h1>
-        <button>Online Menu</button>
+        <button aria-label="online menu">Online Menu</button>
       </section>
       <section>
         {specialsData.map((card) => (
