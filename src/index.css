@@ -330,6 +330,10 @@ body {
     border-bottom: #959595 2px solid;
   }
 
+  .specials-section-card:hover {
+    box-shadow: .5rem .5rem .5rem #959595;
+  }
+
   .specials-section-card-items {
     display: flex;
     flex-direction: column;
