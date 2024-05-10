@@ -20,7 +20,7 @@ export const Specials = () => {
               </div>
               <div className="card-item-footer">
                 <p>{card.specialFooter}</p>
-                <p>{card.specialFooterIcon}</p>
+                <img src={card.specialFooterIcon} alt="delivery" />
               </div>
             </div>
 

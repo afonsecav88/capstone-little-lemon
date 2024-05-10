@@ -287,25 +287,23 @@ body {
     flex-direction: column;
     align-content: center;
     font-family: "Karla";
-    margin: .5rem;
     align-items: center;
     background-color: #EDEFEE;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    padding: 1em;
+    padding: 2em 1em;
   }
 
   .specials-section-header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: .5rem;
+    justify-content: space-around;
     width: 100%;
+    gap: 1rem;
   }
 
   .specials-section-header>h1 {
+    font-family: 'Markazi Text';
     padding: 0;
-    font-size: 16.5pt;
+    font-size: 18pt;
   }
 
   .specials-section-header>button {
@@ -324,37 +322,67 @@ body {
   }
 
   /*Card items sections*/
-
   .specials-section-card {
     display: flex;
     flex-direction: row;
+    padding-bottom: 2em;
+    border-top: #959595 2px solid;
+    border-bottom: #959595 2px solid;
   }
 
   .specials-section-card-items {
     display: flex;
     flex-direction: column;
+    align-content: space-around;
   }
 
   .card-item-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-item-header>p {
+    font-weight: bold;
+    font-size: 15pt;
+    width: 8rem;
+  }
+
+  .card-item-header>p:last-child {
+    color: #EE9972;
+    font-weight: bold;
+    font-size: 13pt;
   }
 
   .card-item-description {
-    max-width: 10rem;
+    max-width: 15rem;
   }
 
   .card-item-footer {
-    display: inline;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-item-footer>p {
+    font-weight: bold;
+    font-size: 12.5pt;
+    width: 8rem;
+    padding-right: 1.5em;
+  }
+
+  .card-item-footer>img {
+    max-width: 2rem;
+    height: 2rem;
   }
 
   .card-image-container {
     display: flex;
+    padding-right: 1em;
   }
 
   .card-image {
     display: flex;
-    width: 12rem;
+    width: 13rem;
     max-width: 100%;
     max-height: 8rem;
     border-radius: 2rem;
