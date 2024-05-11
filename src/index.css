@@ -123,25 +123,21 @@ body {
 
 /* End CallToAction Component */
 
+/*use in desktop chicago*/
+/*.call-to-action-header {
+    margin-top: 0;
+    margin-bottom: 0em;
+    color: var(--secondary-yellow);
+    font-size: 30pt;
+  }
 
-/* Begin chicago component style */
-#section-chicago-h1 {
-  margin-top: 0;
-  margin-bottom: 0em;
-  color: var(--secondary-yellow);
-  font-size: 30pt;
-}
-
-#section-chicago-h2 {
-  margin-top: 0em;
-  margin-bottom: 0.5em;
-  color: #EDEFEE;
-  font-size: 22pt;
-  font-weight: lighter;
-}
-
-/* End chicago component style */
-
+  .call-to-action-subheader {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    color: #EDEFEE;
+    font-size: 22pt;
+    font-weight: lighter;
+  }*/
 
 
 /* Begin mobile first  */
@@ -264,18 +260,14 @@ body {
     color: #EDEFEE;
   }
 
-  /* End CallToAction Component */
-
-
-  /* Begin chicago component style */
-  #section-chicago-h1 {
+  .call-to-action-header {
     margin-top: 0em;
     margin-bottom: 0em;
     color: var(--secondary-yellow);
     font-size: 20pt;
   }
 
-  #section-chicago-h2 {
+  .call-to-action-subheader {
     margin-top: 0rem;
     margin-bottom: 0.5rem;
     color: #EDEFEE;
@@ -283,9 +275,7 @@ body {
     font-weight: lighter;
   }
 
-  /* End chicago component style */
-  /* End CallToAction section */
-
+  /* End CallToAction Component */
 
   /* Begin Specials Section */
   .specials-section-container {
@@ -334,6 +324,7 @@ body {
     padding-bottom: 2em;
     border-top: var(--cards-colors-separator) 2px solid;
     border-bottom: #959595 2px solid;
+    cursor: pointer;
   }
 
   .specials-section-card:hover {
@@ -445,6 +436,13 @@ body {
     background-color: #F5F5F5;
     border-radius: .5rem;
     padding: .5em;
+    cursor: pointer;
+  }
+
+  .card-review-item:hover {
+    transform: scale(105%);
+    box-shadow: .5rem .5rem .5rem var(--cards-colors-separator);
+    transition: all .3s ease-out;
   }
 
   .card-image-testimonial {
@@ -470,100 +468,63 @@ body {
   }
 
   /* End section-testimonials*/
+
+  /* Begin about-container*/
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 4em;
+  }
+
+  .section-about-description>h1 {
+    font-family: 'Markazi Text';
+    font-size: 30pt;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+  }
+
+  .section-about-description>h2 {
+    font-family: 'Markazi Text';
+    font-size: 20pt;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+  }
+
+  .section-about-description>p {
+    font-family: 'Karla';
+    width: 15em;
+    font-size: 13pt;
+  }
+
+  .section-about-image-container {
+    display: flex;
+    padding: 1em;
+  }
+
+  .about-chef-image1 {
+    width: 60%;
+    max-width: 17rem;
+    border-radius: 1rem;
+    transform: translate(-2rem);
+    z-index: 3;
+  }
+
+  .about-chef-image2 {
+    width: 50%;
+    max-width: 15rem;
+    border-radius: 1rem;
+    z-index: 2;
+    transform: translateY(3rem);
+  }
+
+  /* End about-container*/
 }
 
 
-/*Begin section CustomerSay*/
-/* .section-testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  background-color: #BCD1CA;
-  margin-top: 3em;
-}
-
-.section-testimonials>h1 {
-  font-weight: lighter;
-  color: #333333;
-  font-size: 35pt;
-}
-
-#rating-header {
-  font-weight: bold;
-  color: #333333;
-  font-size: 12.5pt;
-}
-
-.card-review-container {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  width: 20em;
-}
-
-.card-image-testimonial {
-  display: inline-flex;
-  width: 15em;
-  height: 6em;
-  padding-top: 2em;
-  gap: 3em
-}
-
-.card-image>p {
-  margin-top: 0em;
-} */
-
-/* End section-testimonials*/
-
-/* Begin about-container*/
-/* .about-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 4em;
-  margin-right: 45em;
-}
-
-.about-container>div>h2 {
-  font-weight: bold;
-  color: #333333;
-}
-
-.about-container>div>p {
-  width: 15em;
-}
-
-.about-chef-image-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.about-chef-image1 {
-  display: flex;
-  width: 25em;
-  height: 20em;
-  padding-left: 18em;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.9;
-  border-radius: 2em;
-}
-
-.about-chef-image2 {
-  display: flex;
-  width: 25em;
-  height: 20em;
-  border-radius: 2em;
-  position: absolute;
-  z-index: 2;
-  padding-top: 10em;
-} */
-
-/* End about-container*/
 
 
 /*Begin reservation-form */

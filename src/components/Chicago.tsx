@@ -1,8 +1,0 @@
-export const Chicago = () => {
-  return (
-    <section className="chicago-container">
-      <h1 id="section-chicago-h1">Little Lemon</h1>
-      <h2 id="section-chicago-h2">Chicago</h2>
-    </section>
-  );
-};

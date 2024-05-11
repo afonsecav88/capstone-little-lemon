@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Chicago } from './Chicago';
 
 export const CallToAction = () => {
   return (
     <article className="call-to-action-container">
       <section>
-        <Chicago />
+        <h1 className="call-to-action-header">Little Lemon</h1>
+        <h2 className="call-to-action-subheader">Chicago</h2>
         <p className="call-to-action-p">
           We are a family owned Mediterranean restaurant, focused contraditional
           recipes served with a modern twist.
