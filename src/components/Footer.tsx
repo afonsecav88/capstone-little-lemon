@@ -2,17 +2,17 @@ import { Nav } from './Nav';
 
 export const Footer = () => {
   return (
-    <footer className="footer-section">
-      <div>
+    <footer className="footer-section-container">
+      <div className="footer-section-logo">
         <img
           src="./Asset 18@4x.png"
           alt="logo footer"
-          className="footer-logo-img"
+          className="footer-section-logo-img"
         />
       </div>
-      <div className="footer-doormat-navigator">
+      {/* <div className="footer-doormat-navigator">
         <Nav />
-      </div>
+      </div> */}
       <div className="footer-contact">
         <p>Contact</p>
         <ul className="footer-contact-list">

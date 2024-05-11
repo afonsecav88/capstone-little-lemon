@@ -358,6 +358,8 @@ body {
 
   .card-item-description {
     max-width: 15rem;
+    font-size: 13pt;
+    color: #333333;
   }
 
   .card-item-footer {
@@ -497,7 +499,7 @@ body {
   .section-about-description>p {
     font-family: 'Karla';
     width: 15em;
-    font-size: 13pt;
+    font-size: 14pt;
   }
 
   .section-about-image-container {
@@ -522,6 +524,94 @@ body {
   }
 
   /* End about-container*/
+
+
+  /* Begin footer section */
+  .footer-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15em;
+    padding: 2em;
+    /* width: 100%; */
+    /* background-color: #EDEFEE; */
+    background-color: var(--primary-yellow);
+  }
+
+  .footer-section-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section-logo-img {
+    width: 8rem;
+    padding-bottom: 3em;
+  }
+
+  /*contact section*/
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .footer-contact>p {
+    margin-left: 3em;
+    font-size: medium;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .footer-contact-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-contact-list>li {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .footer-contact>ul>li>img {
+    width: 2em;
+    height: 3em;
+    padding-right: 1em;
+  }
+
+  /*social media section*/
+  .footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .footer-social-media-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-social-media>p {
+    margin-left: 3em;
+    font-size: medium;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .footer-social-media>ul>li {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .footer-social-media-list>li>img {
+    width: 2em;
+    height: 3em;
+    padding-right: 1em;
+  }
 }
 
 
@@ -632,203 +722,3 @@ body {
 } */
 
 /*End Booking slot section */
-
-
-/* Begin footer section */
-/* .footer-section {
-  display: flex;
-  align-items: center;
-  margin-top: 15em;
-  padding: 2em;
-  background-color: #EDEFEE;
-}
-
-.footer-section>div {
-  flex: 1;
-} */
-
-/*contact section*/
-/* .footer-contact {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-}
-
-.footer-contact>p {
-  margin-left: 3em;
-  font-size: medium;
-  font-weight: bold;
-  color: #333333;
-}
-
-.footer-contact-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-contact-list>li {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
-}
-
-.footer-contact>ul>li>img {
-  width: 2em;
-  height: 3em;
-  padding-right: 1em;
-} */
-
-/*social media section*/
-/* .footer-social-media {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-}
-
-.footer-social-media-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-social-media>p {
-  margin-left: 3em;
-  font-size: medium;
-  font-weight: bold;
-  color: #333333;
-}
-
-.footer-social-media>ul>li {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
-}
-
-.footer-social-media-list>li>img {
-  width: 2em;
-  height: 3em;
-  padding-right: 1em;
-}
-
-.footer-logo-img {
-  height: 18em;
-  width: 8em;
-  padding-left: 10em;
-} */
-
-
-/*Begin media call-to-action */
-/* @media (max-width: 400px) {
-  .call-to-action {
-    display: flex;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    flex-direction: column;
-    align-content: center;
-    gap: 2vw;
-  }
-}
-
-@media (max-width: 838px) {
-  .call-to-action {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    height: 42em;
-    gap: 2vw;
-  }
-} */
-
-/*End media call-to-action */
-
-/*Begin testimonials review section */
-/* @media (max-width: 400px) {
-  .card-review-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 838px) {
-  .card-review-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1100px) {
-  .card-review-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-} */
-
-/* End media call-to-action */
-
-
-/* Begin about section */
-/* @media (max-width: 400px) {
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 838px) {
-  .about-container {
-    padding-left: 3em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1140px) {
-  .about-container {
-    padding-left: 8em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .about-chef-image-container {
-    padding-bottom: 17em;
-  }
-} */
-
-/*Begin about section  */
-
-
-
-/*Begin footer  section */
-/* @media (max-width: 400px) {
-  .footer-section {
-    padding-top: 25em;
-  }
-}
-
-@media (max-width: 838px) {
-  .footer-section {
-    padding-left: 3em;
-  }
-}
-
-
-@media (max-width: 1210px) {
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 2em;
-  }
-
-  .footer-logo-img {
-    padding-left: 2em;
-  }
-} */
-
-
-/* End footer  section */
