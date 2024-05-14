@@ -478,6 +478,7 @@ body {
     align-items: center;
     width: 100%;
     padding-top: 4em;
+    padding-left: 1em;
   }
 
   .section-about-description>h1 {
@@ -498,8 +499,10 @@ body {
 
   .section-about-description>p {
     font-family: 'Karla';
-    width: 15em;
+    width: 95%;
+    max-width: 20rem;
     font-size: 14pt;
+    margin-right: 1rem;
   }
 
   .section-about-image-container {
