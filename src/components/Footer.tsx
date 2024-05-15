@@ -8,9 +8,6 @@ export const Footer = () => {
           className="footer-section-logo-img"
         />
       </div>
-      {/* <div className="footer-doormat-navigator">
-        <Nav />
-      </div> */}
       <div className="footer-contact">
         <p>Contact</p>
         <ul className="footer-contact-list">
@@ -46,9 +43,9 @@ export const Footer = () => {
         </ul>
       </div>
 
-      {/* <div>
-      <section><p>&copy; Little Lemon Restaurant</p></section>
-    </div> */}
+      <section className="footer-end-restaurant-name">
+        <p> &copy; Little Lemon Restaurant</p>
+      </section>
     </footer>
   );
 };

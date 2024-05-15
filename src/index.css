@@ -66,41 +66,44 @@ body {
   display: none;
 }
 
-
 /* End nav-section */
 
+
 /* Begin CallToAction section */
-.call-to-action {
+.call-to-action-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 15vw;
-  height: 19em;
-  background-color: #495E57;
-  /* padding: 3em; */
+  gap: 6rem;
+  align-items: center;
+  max-width: 100%;
+  height: 20rem;
+  background-color: var(--primary-green);
+  padding: 1em;
 }
 
-.call-to-action>section>img {
+.call-to-action-img {
   display: flex;
-  /* width: 22em;
-  height: 26em; */
-  border-radius: 1em;
+  width: 100%;
+  max-width: 18rem;
+  border-radius: 1rem;
+  transform: translateY(12%);
 }
 
-.call-to-action>section>button {
-  width: 10rem;
-  height: 3rem;
+
+.call-to-action-button {
+  width: 9rem;
+  height: 2.5rem;
   border-radius: 1rem;
   padding: 0.5em;
-  background-color: var(secondary-yellow);
+  background-color: var(--primary-yellow);
   color: #333333;
-  font-size: 13.5pt;
-  border: 0;
+  font-size: 10pt;
+  border: 0em;
   font-weight: bold;
   text-decoration: none;
 }
 
-.call-to-action>section>button:hover {
+.call-to-action-button:hover {
   background-color: var(--secondary-yellow);
 }
 
@@ -108,36 +111,162 @@ body {
   text-decoration: none;
 }
 
-
-.call-to-action>section {
-  display: flex;
-  flex-direction: column;
-  margin: 0em;
+.call-to-action-p {
+  width: 14rem;
+  font-size: 12pt;
+  color: #EDEFEE;
 }
 
-.call-to-action>section>p {
-  width: 14em;
-  font-size: 14pt;
+.call-to-action-header {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: var(--secondary-yellow);
+  font-size: 20pt;
+}
+
+.call-to-action-subheader {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
   color: #EDEFEE;
+  font-size: 15pt;
+  font-weight: lighter;
 }
 
 /* End CallToAction Component */
 
-/*use in desktop chicago*/
-/*.call-to-action-header {
-    margin-top: 0;
-    margin-bottom: 0em;
-    color: var(--secondary-yellow);
-    font-size: 30pt;
-  }
+/* Begin Specials Section */
+.specials-section-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  font-family: "Karla";
+  align-items: center;
+  /* background-color: #EDEFEE; */
+  padding: 5em 1em;
+  width: 95%;
+}
 
-  .call-to-action-subheader {
-    margin-top: 0em;
-    margin-bottom: 0.5em;
-    color: #EDEFEE;
-    font-size: 22pt;
-    font-weight: lighter;
-  }*/
+.specials-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 1rem;
+}
+
+.specials-section-header>h1 {
+  font-family: 'Markazi Text';
+  padding: 0;
+  font-size: 18pt;
+}
+
+.specials-section-header>button {
+  border-radius: 0.5rem;
+  padding: 1em;
+  background-color: var(--secondary-yellow);
+  color: #333333;
+  font-size: 11pt;
+  border: 0em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.specials-section-header>button:hover {
+  background-color: var(--secondary-green);
+}
+
+/*Card items sections*/
+.specials-section-card-container {
+  display: flex;
+  gap: 1em;
+}
+
+.specials-section-card {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 2em;
+  background-color: #EDEFEE;
+  cursor: pointer;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.specials-section-card:hover {
+  box-shadow: .5rem .5rem .5rem var(--cards-colors-separator);
+  transition: all .3s ease-out;
+}
+
+.specials-section-card-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-item-header {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.card-item-header>p {
+  font-weight: bold;
+  font-size: 15pt;
+  width: 8rem;
+}
+
+.card-item-header>p:last-child {
+  color: #EE9972;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.card-item-description {
+  width: 80%;
+  max-width: 14rem;
+  font-size: 13pt;
+  color: #333333;
+
+}
+
+.card-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item-footer>p {
+  font-weight: bold;
+  font-size: 12.5pt;
+  width: 8rem;
+  padding-right: 1.5em;
+}
+
+.card-item-footer>img {
+  max-width: 2rem;
+  height: 2rem;
+}
+
+.card-image-container {
+  display: flex;
+  padding-right: 1em;
+}
+
+.card-image {
+  display: flex;
+  width: 100%;
+  max-width: 14rem;
+  max-height: 8rem;
+  border-radius: 2rem;
+  /* padding: 1em; */
+}
+
+/* End Specials Section */
+
+
+
+
+
 
 
 /* Begin mobile first  */
@@ -218,6 +347,7 @@ body {
   .call-to-action-container {
     display: flex;
     justify-content: space-around;
+    gap: 0;
     align-items: center;
     max-width: 100%;
     height: 15rem;
@@ -230,6 +360,7 @@ body {
     width: 80%;
     max-width: 15rem;
     border-radius: 1rem;
+    transform: translateY(0%);
   }
 
 
@@ -319,13 +450,22 @@ body {
   }
 
   /*Card items sections*/
+  .specials-section-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
   .specials-section-card {
     display: flex;
     flex-direction: row;
     padding-bottom: 2em;
     border-top: var(--cards-colors-separator) 2px solid;
     border-bottom: #959595 2px solid;
+    background-color: #ffffff;
     cursor: pointer;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
   }
 
   .specials-section-card:hover {
@@ -336,13 +476,14 @@ body {
   .specials-section-card-items {
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    align-items: start;
   }
 
   .card-item-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0;
   }
 
   .card-item-header>p {
@@ -367,6 +508,7 @@ body {
   .card-item-footer {
     display: flex;
     align-items: center;
+    justify-content: start;
   }
 
   .card-item-footer>p {
@@ -604,6 +746,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2em;
   }
 
   .footer-social-media-list {
@@ -630,6 +773,14 @@ body {
     width: 2rem;
     height: 2rem;
     padding-right: 0.5em;
+  }
+
+  .footer-end-restaurant-name>p {
+    font-weight: bold;
+    font-size: 15pt;
+    align-self: flex-end;
+    border-top: 0.1em solid var(--primary-green);
+    padding: 0.5em;
   }
 
   /*End footer section*/
@@ -735,6 +886,11 @@ body {
   .section-booking-slot-header {
     color: #C3A510;
     font-weight: bold;
+  }
+
+  .footer-end-restaurant-name {
+    display: flex;
+    flex-direction: column;
   }
 
   /*End Booking slot section */

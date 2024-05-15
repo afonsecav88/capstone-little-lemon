@@ -7,7 +7,7 @@ export const Specials = () => {
         <h1>This weeks specials!</h1>
         <button aria-label="online menu">Online Menu</button>
       </section>
-      <section>
+      <section className="specials-section-card-container">
         {specialsData.map((card) => (
           <div key={card.id} className="specials-section-card">
             <div className="specials-section-card-items">
