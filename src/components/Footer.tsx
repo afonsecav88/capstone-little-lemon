@@ -1,5 +1,3 @@
-import { Nav } from './Nav';
-
 export const Footer = () => {
   return (
     <footer className="footer-section-container">
@@ -18,7 +16,9 @@ export const Footer = () => {
         <ul className="footer-contact-list">
           <li>
             <img src="/address.svg" alt="Address" />{' '}
-            <p>Calle del Sol, 123 Ciudad Fantasía, CP 12345 País del Sur</p>
+            <p className="footer-contact-list-address">
+              Calle del Sol, 123 Ciudad Fantasía, CP 12345 País del Sur
+            </p>
           </li>
           <li>
             {' '}

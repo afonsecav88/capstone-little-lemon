@@ -7,11 +7,11 @@ export const BookingSlot = () => {
     <section className="section-booking-slot">
       <h3>Your reservation Data</h3>
       <div className="section-booking-slot-fields">
-        <p className="section-booking-slot-header">Date:</p>{' '}
+        <p className="section-booking-slot-header">Date:</p>
         <p> {state.date}</p>
       </div>
       <div className="section-booking-slot-fields">
-        <p className="section-booking-slot-header">Time: </p>{' '}
+        <p className="section-booking-slot-header">Time: </p>
         <p>{state.time}</p>
       </div>
       <div className="section-booking-slot-fields">

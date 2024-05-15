@@ -286,6 +286,7 @@ body {
     align-items: center;
     /* background-color: #EDEFEE; */
     padding: 2em 1em;
+    width: 95%;
   }
 
   .specials-section-header {
@@ -357,6 +358,7 @@ body {
   }
 
   .card-item-description {
+    width: 100%;
     max-width: 15rem;
     font-size: 13pt;
     color: #333333;
@@ -386,8 +388,8 @@ body {
 
   .card-image {
     display: flex;
-    width: 13rem;
-    max-width: 100%;
+    width: 95%;
+    max-width: 13rem;
     max-height: 8rem;
     border-radius: 2rem;
     padding: 1em;
@@ -467,6 +469,9 @@ body {
 
   .card-review-description {
     width: 90%;
+    max-width: 18rem;
+    margin: 0;
+    padding: 1em;
   }
 
   /* End section-testimonials*/
@@ -499,7 +504,7 @@ body {
 
   .section-about-description>p {
     font-family: 'Karla';
-    width: 95%;
+    width: 80%;
     max-width: 20rem;
     font-size: 14pt;
     margin-right: 1rem;
@@ -534,11 +539,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15em;
-    padding: 2em;
-    /* width: 100%; */
-    /* background-color: #EDEFEE; */
+    margin-top: 5rem;
+    padding-top: 4em;
+    padding-bottom: 4em;
     background-color: var(--primary-yellow);
+    font-family: 'Karla';
+    width: 100%;
   }
 
   .footer-section-logo {
@@ -548,7 +554,8 @@ body {
   }
 
   .footer-section-logo-img {
-    width: 8rem;
+    width: 90%;
+    max-width: 8rem;
     padding-bottom: 3em;
   }
 
@@ -556,12 +563,11 @@ body {
   .footer-contact {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
+    align-items: center;
   }
 
   .footer-contact>p {
-    margin-left: 3em;
-    font-size: medium;
+    font-size: 15pt;
     font-weight: bold;
     color: #333333;
   }
@@ -569,6 +575,8 @@ body {
   .footer-contact-list {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    width: 90%;
   }
 
   .footer-contact-list>li {
@@ -579,149 +587,152 @@ body {
   }
 
   .footer-contact>ul>li>img {
-    width: 2em;
-    height: 3em;
-    padding-right: 1em;
+    width: 90%;
+    max-width: 2rem;
+    height: 2rem;
+    padding-right: 0.5em;
+  }
+
+  .footer-contact-list-address {
+    width: 10rem;
   }
 
   /*social media section*/
   .footer-social-media {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
+    align-items: center;
   }
 
   .footer-social-media-list {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .footer-social-media>p {
-    margin-left: 3em;
     font-size: medium;
     font-weight: bold;
     color: #333333;
   }
 
   .footer-social-media>ul>li {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     text-decoration: none;
     list-style: none;
   }
 
   .footer-social-media-list>li>img {
-    width: 2em;
-    height: 3em;
-    padding-right: 1em;
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.5em;
   }
+
+  /*End footer section*/
+
+
+  /*Begin reservation-form */
+  .section-reservation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    background-color: #495E57;
+    padding: 3em;
+  }
+
+  .section-reservation-label {
+    color: #C3A510;
+  }
+
+  .section-reservation-form>button {
+    display: flex;
+    justify-content: center;
+    background-color: #C3A510;
+    padding: 1em;
+  }
+
+  .reservation-form-button {
+    /*  background-color: #C3A510; */
+    width: 15em;
+    height: 3em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #F4CE14;
+    font-size: 10.5pt;
+    border: 0em;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  .reservation-input-date {
+    width: 12em;
+    height: 1.5em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #EDEFEE;
+    font-size: 12.5pt;
+    border: 0em;
+    font-weight: lighter;
+  }
+
+  .reservation-input-guests {
+    width: 12em;
+    height: 1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #EDEFEE;
+    font-size: 12.5pt;
+    border: 0em;
+    font-weight: lighter;
+  }
+
+  .reservation-select-times {
+    width: 13em;
+    height: 2em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #EDEFEE;
+    font-size: 12.5pt;
+    border: 0em;
+    font-weight: lighter;
+  }
+
+  .reservation-select-occasion {
+    width: 13em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: #EDEFEE;
+    font-size: 12.5pt;
+    border: 0em;
+    font-weight: lighter;
+  }
+
+  */
+  /*End reservation-form */
+
+
+  /*Begin Booking slot section */
+  .section-booking-slot {
+    display: flex;
+    flex-direction: column;
+    color: #EDEFEE;
+  }
+
+  .section-booking-slot>h3 {
+    padding-top: 2em;
+    text-decoration: underline;
+    font-weight: lighter;
+    color: #f8f5f5;
+  }
+
+  .section-booking-slot-header {
+    color: #C3A510;
+    font-weight: bold;
+  }
+
+  /*End Booking slot section */
 }
-
-
-
-
-/*Begin reservation-form */
-/* .section-reservation-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-  gap: 4em;
-  background-color: #495E57;
-  padding: 2em;
-}
-
-.section-reservation-label {
-  color: #C3A510;
-}
-
-.section-reservation-form>button {
-  display: flex;
-  justify-content: center;
-  background-color: #C3A510;
-  padding: 1em;
-} */
-
-/*.reservation-form-button {
-   background-color: #C3A510; */
-/* width: 15em;
-  height: 3em;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  background-color: #F4CE14;
-  font-size: 10.5pt;
-  border: 0em;
-  font-weight: bold;
-  margin-top: 1em;
-}
-
-.reservation-input-date {
-  width: 12em;
-  height: 1.5em;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  background-color: #EDEFEE;
-  font-size: 12.5pt;
-  border: 0em;
-  font-weight: lighter;
-}
-
-.reservation-input-guests {
-  width: 12em;
-  height: 1em;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  background-color: #EDEFEE;
-  font-size: 12.5pt;
-  border: 0em;
-  font-weight: lighter;
-}
-
-.reservation-select-times {
-  width: 13em;
-  height: 2em;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  background-color: #EDEFEE;
-  font-size: 12.5pt;
-  border: 0em;
-  font-weight: lighter;
-}
-
-.reservation-select-occasion {
-  width: 13em;
-  height: 2.5em;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  background-color: #EDEFEE;
-  font-size: 12.5pt;
-  border: 0em;
-  font-weight: lighter;
-} */
-
-/*End reservation-form */
-
-
-/*Begin Booking slot section */
-/* .section-booking-slot {
-  display: flex;
-  flex-direction: column;
-  color: #EDEFEE;
-}
-
-.section-booking-slot-fields {
-  display: inline-flex;
-}
-
-.section-booking-slot>h3 {
-  text-decoration: underline;
-  font-weight: lighter;
-  color: #333333;
-}
-
-.section-booking-slot-header {
-  color: #C3A510;
-  font-weight: bold;
-  padding-right: 1em;
-} */
-
-/*End Booking slot section */

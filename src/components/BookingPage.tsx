@@ -7,7 +7,7 @@ import { BookingSlot } from './BookingSlot';
 export const BookingPage = () => {
   useBookingSlot();
   return (
-    <section className="section-reservation-container ">
+    <section className="section-reservation-container">
       <BookingForm />
       {!useBookingSlot() && <BookingSlot />}
     </section>

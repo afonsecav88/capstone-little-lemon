@@ -8,7 +8,7 @@ export const testimonialsData = [
     id: '11aasadd',
     cover: person1,
     name: 'Ana',
-    reviewText: `The famousus greek salad of crispy lettuce,peppers,olves and our
+    reviewText: `The famousus greek salad of crispy lettuce,
     Chicago style feta cheese,garnishe with crunchy garlic and rosemary
     crountons.`,
     reviewIcon: '4.9 ⭐⭐⭐⭐⭐',
