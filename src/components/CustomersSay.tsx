@@ -3,9 +3,7 @@ import { testimonialsData } from '../mocks/testimonialsData';
 export const CustomersSay = () => {
   return (
     <article className="section-testimonials">
-      <div>
-        <h1 id="section-testimonials-header">Testimonials</h1>
-      </div>
+      <h1 id="section-testimonials-header">Testimonials</h1>
       <section className="card-review-container">
         {testimonialsData.map((review) => (
           <section key={review.id} className="card-review-item">

@@ -261,13 +261,271 @@ body {
   border-top-right-radius: 2rem;
 }
 
-/* End Specials Section */
 @media (max-width: 900px) {
   .specials-section-card-container {
     display: flex;
     flex-direction: column;
   }
 }
+
+/* End Specials Section */
+
+/*Begin section CustomerSay*/
+.section-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background-color: var(--primary-green);
+}
+
+#section-testimonials-header {
+  color: var(--primary-yellow);
+  font-weight: lighter;
+  font-size: 22pt;
+}
+
+#rating-header {
+  font-weight: bold;
+  color: #333333;
+  font-size: 12.5pt;
+}
+
+/*Begin card */
+.card-review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+}
+
+.card-review-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 20rem;
+  background-color: #F5F5F5;
+  border-radius: .5rem;
+  padding: .5em;
+  cursor: pointer;
+}
+
+.card-review-item:hover {
+  transform: scale(105%);
+  box-shadow: .5rem .5rem .5rem var(--cards-colors-separator);
+  transition: all .3s ease-out;
+}
+
+.card-image-testimonial {
+  display: flex;
+  padding-top: 2em;
+  gap: 1em;
+}
+
+.card-image-testimonial>p {
+  font-weight: bold;
+  color: #333333;
+  font-size: 12.5pt;
+}
+
+.card-review-image {
+  border-radius: 4rem;
+  width: 5rem;
+  min-height: 20%;
+}
+
+.card-review-description {
+  width: 90%;
+  max-width: 18rem;
+  margin: 0;
+  padding: 1em;
+}
+
+/* End section-testimonials*/
+
+/* Begin about-container*/
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+.section-about-description>h1 {
+  font-family: 'Markazi Text';
+  font-size: 30pt;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.section-about-description>h2 {
+  font-family: 'Markazi Text';
+  font-size: 20pt;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.section-about-description>p {
+  font-family: 'Karla';
+  width: 80%;
+  max-width: 20rem;
+  font-size: 14pt;
+  margin-right: 1rem;
+}
+
+.section-about-image-container {
+  display: flex;
+  padding: 1em;
+}
+
+.about-chef-image1 {
+  width: 60%;
+  max-width: 17rem;
+  border-radius: 1rem;
+  transform: translate(-2rem);
+  z-index: 3;
+}
+
+.about-chef-image2 {
+  width: 50%;
+  max-width: 15rem;
+  border-radius: 1rem;
+  z-index: 2;
+  transform: translateY(3rem);
+}
+
+/* End about-container*/
+
+
+/* Begin footer section */
+.footer-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding-top: 4em;
+  background-color: var(--primary-yellow);
+  font-family: 'Karla';
+  width: 100%;
+  gap: 3rem;
+}
+
+.footer-section-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section-logo-img {
+  width: 90%;
+  max-width: 8rem;
+  padding-bottom: 3em;
+}
+
+/*contact section*/
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.footer-contact>p {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 90%;
+}
+
+.footer-contact-list>li {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-contact>ul>li>img {
+  width: 90%;
+  max-width: 2rem;
+  height: 2rem;
+  padding-right: 0.5em;
+}
+
+.footer-contact-list-address {
+  width: 10rem;
+}
+
+/*social media section*/
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.footer-social-media-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.footer-social-media>p {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.footer-social-media>ul>li {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-social-media-list>li>img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 0.5em;
+}
+
+.footer-end-restaurant-name {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-yellow);
+  padding-bottom: 2em;
+}
+
+.footer-end-restaurant-name>p {
+  text-align: end;
+  font-weight: bold;
+  font-size: 15pt;
+  align-self: flex-end;
+  border-top: 0.1em solid #EE9972;
+  padding: 0.5em;
+  width: 70%;
+}
+
+/*End footer section*/
 
 
 
@@ -685,10 +943,10 @@ body {
     align-items: center;
     margin-top: 5rem;
     padding-top: 4em;
-    padding-bottom: 4em;
     background-color: var(--primary-yellow);
     font-family: 'Karla';
     width: 100%;
+    gap: 0;
   }
 
   .footer-section-logo {
@@ -777,12 +1035,21 @@ body {
     padding-right: 0.5em;
   }
 
+  .footer-end-restaurant-name {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-yellow);
+    padding-bottom: 2em;
+  }
+
   .footer-end-restaurant-name>p {
+    text-align: end;
     font-weight: bold;
     font-size: 15pt;
     align-self: flex-end;
-    border-top: 0.1em solid var(--primary-green);
+    border-top: 0.1em solid #EE9972;
     padding: 0.5em;
+    width: 70%;
   }
 
   /*End footer section*/
@@ -888,11 +1155,6 @@ body {
   .section-booking-slot-header {
     color: #C3A510;
     font-weight: bold;
-  }
-
-  .footer-end-restaurant-name {
-    display: flex;
-    flex-direction: column;
   }
 
   /*End Booking slot section */
