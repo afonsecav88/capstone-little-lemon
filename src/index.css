@@ -141,7 +141,6 @@ body {
   align-content: center;
   font-family: "Karla";
   align-items: center;
-  /* background-color: #EDEFEE; */
   padding: 5em 1em;
   width: 95%;
 }
@@ -150,8 +149,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
-  gap: 1rem;
+  width: 55%;
+
 }
 
 .specials-section-header>h1 {
@@ -187,8 +186,10 @@ body {
   padding-bottom: 2em;
   background-color: #EDEFEE;
   cursor: pointer;
+  padding: 0;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  width: 100%;
 }
 
 .specials-section-card:hover {
@@ -205,19 +206,19 @@ body {
 .card-item-header {
   display: flex;
   align-items: center;
-  align-items: center;
-  padding-left: 2rem;
+  justify-content: center;
 }
 
 .card-item-header>p {
   font-weight: bold;
   font-size: 15pt;
-  width: 8rem;
+  width: 9.5rem;
 }
 
 .card-item-header>p:last-child {
   color: #EE9972;
   font-weight: bold;
+  width: 3rem;
   font-size: 13pt;
 }
 
@@ -249,23 +250,24 @@ body {
 
 .card-image-container {
   display: flex;
-  padding-right: 1em;
+  justify-content: center;
+  padding: 0;
 }
 
 .card-image {
   display: flex;
-  width: 100%;
-  max-width: 14rem;
-  max-height: 8rem;
-  border-radius: 2rem;
-  /* padding: 1em; */
+  width: 17rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 /* End Specials Section */
-
-
-
-
+@media (max-width: 900px) {
+  .specials-section-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 
@@ -466,6 +468,7 @@ body {
     cursor: pointer;
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
+    padding-left: 1em;
   }
 
   .specials-section-card:hover {
@@ -481,7 +484,6 @@ body {
 
   .card-item-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-left: 0;
   }
