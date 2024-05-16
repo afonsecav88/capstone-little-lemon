@@ -1,37 +1,49 @@
-import { useContext, useState } from 'react';
+import {
+  ChangeEvent,
+  ChangeEventHandler,
+  FormEvent,
+  useContext,
+  useState,
+} from 'react';
 import { BookingContext } from '../context/BookingContext';
+import { Reservation } from '../models/reservation.interface';
 
 const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
 const availableOccasion = ['Birthday', 'Anniversary'];
 
 export const BookingForm = () => {
-  const initState = {
+  const initialState: Reservation = {
     date: '',
     time: '17:00',
     guests: 1,
     occasion: 'Birthday',
   };
-  const [formData, setFormData] = useState(initState);
   const { dispatch } = useContext(BookingContext);
+  const [formData, setFormData] = useState<Reservation>(initialState);
 
-  const { guests, date } = formData;
+  const { date, time, guests, occasion } = formData;
 
-  const onChange = (event) => {
+  const onChange = (
+    e:
+      | ChangeEventHandler<HTMLInputElement>
+      | ChangeEvent<HTMLSelectElement>
+      | FormEvent<HTMLInputElement>
+  ) => {
     setFormData((prev) => ({
       ...prev,
-      [event.target.name]: event.target.value,
+      [e.target.name]: e.target.value,
     }));
   };
 
   const resetForm = () => {
-    setFormData({ ...initState });
+    setFormData({ ...initialState });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     dispatch({
       type: 'update_reservation',
-      ...formData,
+      payload: { date, guests, occasion, time },
     });
     resetForm();
   };
@@ -111,7 +123,7 @@ export const BookingForm = () => {
       <select
         id="occasion"
         name="occasion"
-        onChange={onChange}
+        onChange={(e) => onChange(e)}
         multiple={false}
         required
         className="reservation-select-occasion"

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookingForm } from './BookingForm';
 
 import { useBookingSlot } from '../hooks/useBookingSlot';
