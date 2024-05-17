@@ -1,10 +1,4 @@
-import {
-  ChangeEvent,
-  ChangeEventHandler,
-  FormEvent,
-  useContext,
-  useState,
-} from 'react';
+import { ChangeEvent, FormEvent, useContext, useState } from 'react';
 import { BookingContext } from '../context/BookingContext';
 import { Reservation } from '../models/reservation.interface';
 
@@ -24,14 +18,11 @@ export const BookingForm = () => {
   const { date, time, guests, occasion } = formData;
 
   const onChange = (
-    e:
-      | ChangeEventHandler<HTMLInputElement>
-      | ChangeEvent<HTMLSelectElement>
-      | FormEvent<HTMLInputElement>
+    event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLSelectElement>
   ) => {
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [event.target.name]: event.target.value,
     }));
   };
 
@@ -123,7 +114,7 @@ export const BookingForm = () => {
       <select
         id="occasion"
         name="occasion"
-        onChange={(e) => onChange(e)}
+        onChange={onChange}
         multiple={false}
         required
         className="reservation-select-occasion"
